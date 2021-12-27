@@ -31,7 +31,7 @@ function App() {
   }
 
   const clearAllDone = () => {
-    const newTodoList = todoList.filter((todo) =>{ return !todo.status; }); 
+    const newTodoList = todoList.filter((todo) => { return !todo.status; });
     setTodoList(newTodoList);
   }
 
@@ -41,13 +41,6 @@ function App() {
         <Navbar bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>
-              <img
-                alt=""
-                src={logo}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{' '}
               React Todo List
             </Navbar.Brand>
             <Button variant="secondary" onClick={() => setShowAddModal(true)}>Add Todo</Button>
